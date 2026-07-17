@@ -36,3 +36,6 @@ models:
     raw:
       +materialized: table
       +schema: raw_models
+    intermediate:
+      +materialized: table
+      +schema: intermediate_models
