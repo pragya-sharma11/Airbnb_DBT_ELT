@@ -2,3 +2,4 @@
 DDL/integration.sql
 .venv
 airbnb_dbt_elt/profiles.yml
+airbnb_dbt_elt/logs/
