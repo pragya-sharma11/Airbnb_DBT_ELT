@@ -1,0 +1,4 @@
+.env
+DDL/integration.sql
+.venv
+airbnb_dbt_elt/profiles.yml

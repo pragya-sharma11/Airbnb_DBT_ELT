@@ -1,0 +1,433 @@
+[0m21:51:10.618104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba0b310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba99a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba9a2d0>]}
+
+
+============================== 21:51:10.620262 | cc13a527-8274-481e-acac-1f8f210d518c ==============================
+[0m21:51:10.620262 [info ] [MainThread]: Running with dbt=1.11.12
+[0m21:51:10.620506 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'indirect_selection': 'eager', 'warn_error': 'None', 'fail_fast': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt init airbnb_dbt_elt', 'target_path': 'None', 'log_path': 'logs', 'use_colors': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'static_parser': 'True', 'empty': 'None', 'quiet': 'False', 'write_json': 'True', 'no_print': 'None', 'printer_width': '80', 'partial_parse': 'True', 'log_cache_events': 'False', 'profiles_dir': '/Users/psharm204/.dbt', 'use_experimental_parser': 'False', 'version_check': 'True'}
+[0m21:51:10.625661 [debug] [MainThread]: Starter project path: /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m21:51:10.633419 [info ] [MainThread]: 
+Your new dbt project "airbnb_dbt_elt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:51:10.633639 [info ] [MainThread]: Setting up your profile.
+[0m21:51:33.614210 [error] [MainThread]: Encountered an error:
+
+[0m21:51:33.618280 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/cli/main.py", line 488, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 248, in setup_profile
+    if not self.check_if_can_write_profile(profile_name=profile_name):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 211, in check_if_can_write_profile
+    response = click.confirm(
+               ^^^^^^^^^^^^^^
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/click/termui.py", line 285, in confirm
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:51:33.621647 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 23.047739, "process_in_blocks": "0", "process_kernel_time": 0.163532, "process_mem_max_rss": "115277824", "process_out_blocks": "0", "process_user_time": 0.6306}
+[0m21:51:33.622093 [debug] [MainThread]: Command `dbt init` failed at 21:51:33.622013 after 23.05 seconds
+[0m21:51:33.622487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba5cc90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102a4c2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba18850>]}
+[0m21:51:33.622789 [debug] [MainThread]: Flushing usage events
+[0m21:51:35.056492 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:52:13.353980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d67b710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d678a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d70a5d0>]}
+
+
+============================== 21:52:13.356817 | a1f666ab-731c-45cc-a80d-c7288f700791 ==============================
+[0m21:52:13.356817 [info ] [MainThread]: Running with dbt=1.11.12
+[0m21:52:13.357076 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'no_print': 'None', 'partial_parse': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'write_json': 'True', 'empty': 'None', 'profiles_dir': '/Users/psharm204/.dbt', 'fail_fast': 'False', 'printer_width': '80', 'warn_error': 'None', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'version_check': 'True', 'quiet': 'False', 'log_path': 'logs', 'use_colors': 'True', 'static_parser': 'True'}
+[0m21:52:13.364719 [info ] [MainThread]: dbt version: 1.11.12
+[0m21:52:13.364904 [info ] [MainThread]: python version: 3.11.15
+[0m21:52:13.365040 [info ] [MainThread]: python path: /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/bin/python3.11
+[0m21:52:13.365251 [info ] [MainThread]: os info: macOS-26.5-arm64-arm-64bit
+[0m21:52:20.021344 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:52:20.021577 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:52:20.021694 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:52:20.056373 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m21:52:20.056679 [info ] [MainThread]: Using profiles dir at /Users/psharm204/.dbt
+[0m21:52:20.056839 [info ] [MainThread]: Using profiles.yml file at /Users/psharm204/.dbt/profiles.yml
+[0m21:52:20.056980 [info ] [MainThread]: Using dbt_project.yml file at /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/dbt_project.yml
+[0m21:52:20.057120 [info ] [MainThread]: Configuration:
+[0m21:52:20.057239 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m21:52:20.057359 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:52:20.057475 [info ] [MainThread]: Required dependencies:
+[0m21:52:20.057696 [debug] [MainThread]: Executing "git --help"
+[0m21:52:20.557676 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:52:20.558240 [debug] [MainThread]: STDERR: "b''"
+[0m21:52:20.558412 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:52:20.558589 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m21:52:20.558787 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:52:20.558906 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "ecommerce", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+
+
+[0m21:52:20.559031 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/dbt_project.yml> not found
+
+[0m21:52:20.561097 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 7.251732, "process_in_blocks": "0", "process_kernel_time": 0.185221, "process_mem_max_rss": "142606336", "process_out_blocks": "0", "process_user_time": 0.637819}
+[0m21:52:20.561750 [debug] [MainThread]: Command `dbt debug` failed at 21:52:20.561689 after 7.25 seconds
+[0m21:52:20.562029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109574190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109574110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7d9e90>]}
+[0m21:52:20.562252 [debug] [MainThread]: Flushing usage events
+[0m21:52:21.549825 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:52:51.093921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f56710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f55090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109fe2b90>]}
+
+
+============================== 21:52:51.096342 | 34b8014a-c875-4c7b-9759-16102b5cd3c8 ==============================
+[0m21:52:51.096342 [info ] [MainThread]: Running with dbt=1.11.12
+[0m21:52:51.096603 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'target_path': 'None', 'log_path': 'logs', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt init airbnb_dbt_elt', 'cache_selected_only': 'False', 'printer_width': '80', 'log_format': 'default', 'quiet': 'False', 'log_cache_events': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'partial_parse': 'True', 'introspect': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'profiles_dir': '/Users/psharm204/.dbt', 'use_colors': 'True', 'write_json': 'True', 'debug': 'False'}
+[0m21:52:51.103772 [info ] [MainThread]: A project called airbnb_dbt_elt already exists here.
+[0m21:52:51.105753 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.056667708, "process_in_blocks": "0", "process_kernel_time": 0.144601, "process_mem_max_rss": "114655232", "process_out_blocks": "0", "process_user_time": 0.483707}
+[0m21:52:51.105992 [debug] [MainThread]: Command `dbt init` succeeded at 21:52:51.105948 after 0.06 seconds
+[0m21:52:51.106169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ce7190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105db0090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105db0150>]}
+[0m21:52:51.106337 [debug] [MainThread]: Flushing usage events
+[0m21:52:52.754033 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:53:07.722795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089fa290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7bd410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7bdcd0>]}
+
+
+============================== 21:53:07.725101 | 5b3d7b24-59d8-47b5-97ea-5468e0fb2f93 ==============================
+[0m21:53:07.725101 [info ] [MainThread]: Running with dbt=1.11.12
+[0m21:53:07.725345 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'version_check': 'True', 'empty': 'None', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'static_parser': 'True', 'printer_width': '80', 'target_path': 'None', 'invocation_command': 'dbt init airbnb_dbt_elt', 'warn_error': 'None', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/psharm204/.dbt', 'use_colors': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'partial_parse': 'True'}
+[0m21:53:07.732817 [debug] [MainThread]: Starter project path: /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m21:53:07.740358 [info ] [MainThread]: 
+Your new dbt project "airbnb_dbt_elt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:53:07.740565 [info ] [MainThread]: Setting up your profile.
+[0m21:53:12.726509 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:53:12.726726 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:53:12.726858 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:54:22.477480 [info ] [MainThread]: Profile airbnb_dbt_elt written to /Users/psharm204/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:54:22.486797 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 74.80656, "process_in_blocks": "0", "process_kernel_time": 0.190155, "process_mem_max_rss": "140492800", "process_out_blocks": "0", "process_user_time": 0.601575}
+[0m21:54:22.490341 [debug] [MainThread]: Command `dbt init` succeeded at 21:54:22.490055 after 74.81 seconds
+[0m21:54:22.491393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7a2a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107433110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa49cd0>]}
+[0m21:54:22.492073 [debug] [MainThread]: Flushing usage events
+[0m21:54:23.178642 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:55:42.758581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df70a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dff18d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dff2190>]}
+
+
+============================== 21:55:42.761127 | e3fd4fc5-3b3f-4cc3-bb51-3e7461f293ac ==============================
+[0m21:55:42.761127 [info ] [MainThread]: Running with dbt=1.11.12
+[0m21:55:42.761376 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'no_print': 'None', 'debug': 'False', 'introspect': 'True', 'fail_fast': 'False', 'version_check': 'True', 'profiles_dir': '/Users/psharm204/.dbt', 'invocation_command': 'dbt debug', 'empty': 'None', 'log_path': 'logs', 'log_format': 'default', 'target_path': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'write_json': 'True', 'warn_error': 'None'}
+[0m21:55:42.769762 [info ] [MainThread]: dbt version: 1.11.12
+[0m21:55:42.769960 [info ] [MainThread]: python version: 3.11.15
+[0m21:55:42.770094 [info ] [MainThread]: python path: /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/bin/python3.11
+[0m21:55:42.770206 [info ] [MainThread]: os info: macOS-26.5-arm64-arm-64bit
+[0m21:55:42.974910 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:55:42.975143 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:55:42.975263 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:55:42.999336 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m21:55:42.999623 [info ] [MainThread]: Using profiles dir at /Users/psharm204/.dbt
+[0m21:55:42.999775 [info ] [MainThread]: Using profiles.yml file at /Users/psharm204/.dbt/profiles.yml
+[0m21:55:42.999943 [info ] [MainThread]: Using dbt_project.yml file at /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/dbt_project.yml
+[0m21:55:43.000085 [info ] [MainThread]: Configuration:
+[0m21:55:43.000217 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m21:55:43.000331 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:55:43.000429 [info ] [MainThread]: Required dependencies:
+[0m21:55:43.000607 [debug] [MainThread]: Executing "git --help"
+[0m21:55:43.119236 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:55:43.119700 [debug] [MainThread]: STDERR: "b''"
+[0m21:55:43.119859 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:55:43.120016 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m21:55:43.120253 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:55:43.120398 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "ecommerce", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+
+
+[0m21:55:43.120530 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/dbt_project.yml> not found
+
+[0m21:55:43.122694 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.4094487, "process_in_blocks": "0", "process_kernel_time": 0.184904, "process_mem_max_rss": "142311424", "process_out_blocks": "0", "process_user_time": 0.612291}
+[0m21:55:43.123153 [debug] [MainThread]: Command `dbt debug` failed at 21:55:43.123108 after 0.41 seconds
+[0m21:55:43.123361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dff1e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10535c250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10535c110>]}
+[0m21:55:43.123563 [debug] [MainThread]: Flushing usage events
+[0m21:55:44.915502 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:56:24.863798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b8e8b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b817c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b966850>]}
+
+
+============================== 21:56:24.866107 | 9b4513ea-7d72-4e91-b752-a698d4ff6e71 ==============================
+[0m21:56:24.866107 [info ] [MainThread]: Running with dbt=1.11.12
+[0m21:56:24.866355 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/psharm204/.dbt', 'use_experimental_parser': 'False', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'log_format': 'default', 'debug': 'False', 'write_json': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'use_colors': 'True', 'target_path': 'None', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'cache_selected_only': 'False', 'no_print': 'None', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'partial_parse': 'True'}
+[0m21:56:24.873513 [info ] [MainThread]: dbt version: 1.11.12
+[0m21:56:24.873701 [info ] [MainThread]: python version: 3.11.15
+[0m21:56:24.873837 [info ] [MainThread]: python path: /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/bin/python3.11
+[0m21:56:24.873957 [info ] [MainThread]: os info: macOS-26.5-arm64-arm-64bit
+[0m21:56:25.068597 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:56:25.068818 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:56:25.068936 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:56:25.090780 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m21:56:25.091003 [info ] [MainThread]: Using profiles dir at /Users/psharm204/.dbt
+[0m21:56:25.091130 [info ] [MainThread]: Using profiles.yml file at /Users/psharm204/.dbt/profiles.yml
+[0m21:56:25.091241 [info ] [MainThread]: Using dbt_project.yml file at /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/dbt_project.yml
+[0m21:56:25.091352 [info ] [MainThread]: Configuration:
+[0m21:56:25.091453 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m21:56:25.091552 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:56:25.091648 [info ] [MainThread]: Required dependencies:
+[0m21:56:25.091821 [debug] [MainThread]: Executing "git --help"
+[0m21:56:25.214701 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:56:25.215164 [debug] [MainThread]: STDERR: "b''"
+[0m21:56:25.215345 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:56:25.215498 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m21:56:25.215688 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:56:25.215810 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "ecommerce", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+
+
+[0m21:56:25.215934 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/dbt_project.yml> not found
+
+[0m21:56:25.217715 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.3978855, "process_in_blocks": "0", "process_kernel_time": 0.165433, "process_mem_max_rss": "142426112", "process_out_blocks": "0", "process_user_time": 0.599411}
+[0m21:56:25.218191 [debug] [MainThread]: Command `dbt debug` failed at 21:56:25.218144 after 0.40 seconds
+[0m21:56:25.218399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b57ec90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d650d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba1aa90>]}
+[0m21:56:25.218583 [debug] [MainThread]: Flushing usage events
+[0m21:56:26.444874 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:06:52.558221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a028850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0b9910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0ba1d0>]}
+
+
+============================== 22:06:52.560703 | d3d0d0ea-3d00-4f2d-970e-b7c4408782eb ==============================
+[0m22:06:52.560703 [info ] [MainThread]: Running with dbt=1.11.12
+[0m22:06:52.560975 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt init airbnb_dbt_elt', 'debug': 'False', 'static_parser': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'quiet': 'False', 'log_format': 'default', 'version_check': 'True', 'printer_width': '80', 'partial_parse': 'True', 'write_json': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'introspect': 'True', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/psharm204/.dbt', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'use_colors': 'True', 'empty': 'None', 'log_cache_events': 'False'}
+[0m22:06:52.569321 [debug] [MainThread]: Starter project path: /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m22:06:52.576724 [info ] [MainThread]: 
+Your new dbt project "airbnb_dbt_elt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:06:52.576922 [info ] [MainThread]: Setting up your profile.
+[0m22:06:56.257117 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:06:56.257341 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:06:56.257473 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:07:24.163882 [error] [MainThread]: Encountered an error:
+
+[0m22:07:24.170088 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/cli/main.py", line 488, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/task/init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/click/termui.py", line 218, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/click/termui.py", line 201, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m22:07:24.174937 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 31.661007, "process_in_blocks": "0", "process_kernel_time": 0.189686, "process_mem_max_rss": "140804096", "process_out_blocks": "0", "process_user_time": 0.599739}
+[0m22:07:24.176510 [debug] [MainThread]: Command `dbt init` failed at 22:07:24.176254 after 31.66 seconds
+[0m22:07:24.177250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a07cc90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e68150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e68090>]}
+[0m22:07:24.178071 [debug] [MainThread]: Flushing usage events
+[0m22:07:25.732693 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:07:35.290921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3e0990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b460710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b471f10>]}
+
+
+============================== 22:07:35.293107 | bbfbf6ac-9eca-47c6-a514-1890113a29c3 ==============================
+[0m22:07:35.293107 [info ] [MainThread]: Running with dbt=1.11.12
+[0m22:07:35.293356 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'version_check': 'True', 'invocation_command': 'dbt init airbnb_dbt_elt', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'no_print': 'None', 'use_colors': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'warn_error': 'None', 'debug': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/Users/psharm204/.dbt', 'quiet': 'False', 'log_path': 'logs', 'use_experimental_parser': 'False', 'write_json': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'fail_fast': 'False', 'log_format': 'default'}
+[0m22:07:35.300507 [debug] [MainThread]: Starter project path: /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m22:07:35.307438 [info ] [MainThread]: 
+Your new dbt project "airbnb_dbt_elt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:07:35.307625 [info ] [MainThread]: Setting up your profile.
+[0m22:07:38.347623 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:07:38.347843 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:07:38.347976 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:12:09.204009 [info ] [MainThread]: Profile airbnb_dbt_elt written to /Users/psharm204/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:12:09.213818 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 273.95776, "process_in_blocks": "0", "process_kernel_time": 0.183879, "process_mem_max_rss": "140623872", "process_out_blocks": "0", "process_user_time": 0.605982}
+[0m22:12:09.216865 [debug] [MainThread]: Command `dbt init` succeeded at 22:12:09.216630 after 273.96 seconds
+[0m22:12:09.217896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3e0550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b31fd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6fdcd0>]}
+[0m22:12:09.218666 [debug] [MainThread]: Flushing usage events
+[0m22:12:11.262669 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:12:31.536145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dcb88d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd39450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd39cd0>]}
+
+
+============================== 22:12:31.538470 | dfd29064-cff8-4d39-9bb8-3e85d33aa3d4 ==============================
+[0m22:12:31.538470 [info ] [MainThread]: Running with dbt=1.11.12
+[0m22:12:31.538720 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'warn_error': 'None', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'static_parser': 'True', 'target_path': 'None', 'profiles_dir': '/Users/psharm204/.dbt', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs', 'empty': 'None', 'write_json': 'True', 'no_print': 'None', 'version_check': 'True', 'fail_fast': 'False', 'printer_width': '80', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'partial_parse': 'True'}
+[0m22:12:31.546642 [info ] [MainThread]: dbt version: 1.11.12
+[0m22:12:31.546828 [info ] [MainThread]: python version: 3.11.15
+[0m22:12:31.546973 [info ] [MainThread]: python path: /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/bin/python3.11
+[0m22:12:31.547173 [info ] [MainThread]: os info: macOS-26.5-arm64-arm-64bit
+[0m22:12:31.744573 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:12:31.744803 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:12:31.744924 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:12:31.768358 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m22:12:31.768606 [info ] [MainThread]: Using profiles dir at /Users/psharm204/.dbt
+[0m22:12:31.768734 [info ] [MainThread]: Using profiles.yml file at /Users/psharm204/.dbt/profiles.yml
+[0m22:12:31.768842 [info ] [MainThread]: Using dbt_project.yml file at /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/dbt_project.yml
+[0m22:12:31.768959 [info ] [MainThread]: Configuration:
+[0m22:12:31.769062 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m22:12:31.769163 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:12:31.769259 [info ] [MainThread]: Required dependencies:
+[0m22:12:31.769406 [debug] [MainThread]: Executing "git --help"
+[0m22:12:32.469131 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:12:32.469636 [debug] [MainThread]: STDERR: "b''"
+[0m22:12:32.469819 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:12:32.469977 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m22:12:32.470190 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m22:12:32.470310 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "ecommerce", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+
+
+[0m22:12:32.470427 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/dbt_project.yml> not found
+
+[0m22:12:32.472216 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.98112285, "process_in_blocks": "0", "process_kernel_time": 0.169128, "process_mem_max_rss": "141410304", "process_out_blocks": "0", "process_user_time": 0.617863}
+[0m22:12:32.472781 [debug] [MainThread]: Command `dbt debug` failed at 22:12:32.472728 after 0.98 seconds
+[0m22:12:32.473057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dca8510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dbfe850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd39390>]}
+[0m22:12:32.473264 [debug] [MainThread]: Flushing usage events
+[0m22:12:33.368992 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:45:20.451910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5c4850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d2f8d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d38a6d0>]}
+
+
+============================== 22:45:20.454518 | d98d19af-255a-4a8b-b9cb-6cb807d59eb7 ==============================
+[0m22:45:20.454518 [info ] [MainThread]: Running with dbt=1.11.12
+[0m22:45:20.454795 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'invocation_command': 'dbt debug', 'log_format': 'default', 'profiles_dir': '/Users/psharm204/.dbt', 'cache_selected_only': 'False', 'warn_error': 'None', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'quiet': 'False', 'static_parser': 'True', 'write_json': 'True', 'introspect': 'True', 'no_print': 'None', 'empty': 'None', 'use_colors': 'True', 'version_check': 'True', 'log_path': 'logs', 'printer_width': '80'}
+[0m22:45:20.462463 [info ] [MainThread]: dbt version: 1.11.12
+[0m22:45:20.462624 [info ] [MainThread]: python version: 3.11.15
+[0m22:45:20.462757 [info ] [MainThread]: python path: /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/.venv/bin/python3.11
+[0m22:45:20.462877 [info ] [MainThread]: os info: macOS-26.5-arm64-arm-64bit
+[0m22:45:20.686534 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:45:20.686764 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:45:20.686881 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:45:20.709761 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m22:45:20.710017 [info ] [MainThread]: Using profiles dir at /Users/psharm204/.dbt
+[0m22:45:20.710144 [info ] [MainThread]: Using profiles.yml file at /Users/psharm204/.dbt/profiles.yml
+[0m22:45:20.710257 [info ] [MainThread]: Using dbt_project.yml file at /Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/dbt_project.yml
+[0m22:45:20.710369 [info ] [MainThread]: Configuration:
+[0m22:45:20.710476 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m22:45:20.710582 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:45:20.710687 [info ] [MainThread]: Required dependencies:
+[0m22:45:20.710878 [debug] [MainThread]: Executing "git --help"
+[0m22:45:21.508159 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:45:21.508646 [debug] [MainThread]: STDERR: "b''"
+[0m22:45:21.508814 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:45:21.508957 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m22:45:21.509144 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m22:45:21.509268 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "ecommerce", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+
+
+[0m22:45:21.509395 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/psharm204/Documents/Pragya Sharma/DBT Folders/Airbnb_DBT_ELT/dbt_project.yml> not found
+
+[0m22:45:21.511185 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.1069545, "process_in_blocks": "0", "process_kernel_time": 0.197691, "process_mem_max_rss": "142147584", "process_out_blocks": "0", "process_user_time": 0.613227}
+[0m22:45:21.511699 [debug] [MainThread]: Command `dbt debug` failed at 22:45:21.511645 after 1.11 seconds
+[0m22:45:21.511948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d389dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d38a410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d256490>]}
+[0m22:45:21.512173 [debug] [MainThread]: Flushing usage events
+[0m22:45:22.984176 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:45:33.253409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b508f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b589d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b58a5d0>]}
+
+
+============================== 22:45:33.255959 | b98c3055-4919-4b41-9f48-152a61414085 ==============================
+[0m22:45:33.255959 [info ] [MainThread]: Running with dbt=1.11.12
+[0m22:45:33.256212 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'log_cache_events': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'warn_error': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'target_path': 'None', 'introspect': 'True', 'fail_fast': 'False', 'profiles_dir': '/Users/psharm204/.dbt', 'no_print': 'None', 'quiet': 'False', 'use_colors': 'True', 'invocation_command': 'dbt init airbnb_dbt_elt', 'version_check': 'True', 'printer_width': '80', 'cache_selected_only': 'False'}
+[0m22:45:33.264016 [info ] [MainThread]: A project called airbnb_dbt_elt already exists here.
+[0m22:45:33.265508 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.05626096, "process_in_blocks": "0", "process_kernel_time": 0.130282, "process_mem_max_rss": "114573312", "process_out_blocks": "0", "process_user_time": 0.48362}
+[0m22:45:33.265748 [debug] [MainThread]: Command `dbt init` succeeded at 22:45:33.265704 after 0.06 seconds
+[0m22:45:33.265914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b574c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b456790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aed74d0>]}
+[0m22:45:33.266069 [debug] [MainThread]: Flushing usage events
+[0m22:45:33.838605 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:45:38.257319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109444dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091eba90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094c5bd0>]}
+
+
+============================== 22:45:38.259093 | 25239b81-96ab-414c-9f36-65b0d44ced4a ==============================
+[0m22:45:38.259093 [info ] [MainThread]: Running with dbt=1.11.12
+[0m22:45:38.259365 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'quiet': 'False', 'log_path': 'logs', 'use_experimental_parser': 'False', 'debug': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'log_format': 'default', 'static_parser': 'True', 'empty': 'None', 'write_json': 'True', 'version_check': 'True', 'no_print': 'None', 'invocation_command': 'dbt init airbnb_dbt_elt', 'profiles_dir': '/Users/psharm204/.dbt', 'printer_width': '80', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'use_colors': 'True', 'target_path': 'None'}
+[0m22:45:38.264400 [info ] [MainThread]: A project called airbnb_dbt_elt already exists here.
+[0m22:45:38.265796 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.0505195, "process_in_blocks": "0", "process_kernel_time": 0.117718, "process_mem_max_rss": "114573312", "process_out_blocks": "0", "process_user_time": 0.494799}
+[0m22:45:38.266007 [debug] [MainThread]: Command `dbt init` succeeded at 22:45:38.265962 after 0.05 seconds
+[0m22:45:38.266155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109434550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091eb610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10936f810>]}
+[0m22:45:38.266297 [debug] [MainThread]: Flushing usage events
+[0m22:45:38.755435 [debug] [MainThread]: An error was encountered while trying to flush usage events
