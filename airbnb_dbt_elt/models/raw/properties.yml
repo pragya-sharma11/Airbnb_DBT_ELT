@@ -1,0 +1,10 @@
+models:
+  - name: raw_bookings
+    config:
+      materialized: table
+  - name: raw_hosts
+    config:
+      materialized: table
+  - name: raw_listings
+    config:
+      materialized: table

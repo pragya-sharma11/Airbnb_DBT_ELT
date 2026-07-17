@@ -33,3 +33,6 @@ models:
   airbnb_dbt_elt:
     demo:
       +materialized: view
+    raw:
+      +materialized: table
+      +schema: raw_models
