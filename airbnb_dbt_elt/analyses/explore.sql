@@ -1,0 +1,1 @@
+SELECT * from {{ ref('intm_hosts') }}
