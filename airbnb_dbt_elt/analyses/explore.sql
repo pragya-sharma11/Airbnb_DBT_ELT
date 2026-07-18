@@ -1,1 +1,2 @@
-SELECT * from {{ ref('intm_hosts') }}
+
+SELECT * from {{ref('obt')}} 

@@ -13,7 +13,7 @@
         },
         {
             "table": "AIRBNB.INTERMEDIATE_MODELS.INTM_HOSTS",
-            "columns": "intm_hosts.host_name, intm_hosts.host_since, intm_hosts.is_superhost, intm_hosts.response_rate, intm_hosts.created_at as HOST_CREATED_AT",
+            "columns": "intm_hosts.host_name, intm_hosts.host_since, intm_hosts.is_superhost, intm_hosts.response_rate, intm_hosts.response_rate_quality, intm_hosts.created_at as HOST_CREATED_AT",
             "alias": "intm_hosts",
             "join_condition": "intm_listings.host_id = intm_hosts.host_id"
         }

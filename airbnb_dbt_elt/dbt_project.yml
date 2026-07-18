@@ -39,3 +39,8 @@ models:
     intermediate:
       +materialized: table
       +schema: intermediate_models
+    analytics:
+      +materialized: table
+      +schema: analytics_models
+      ephemeral:
+        +materialized: ephemeral
